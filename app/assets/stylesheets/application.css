@@ -1,15 +1,588 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 1.8;
+  font-weight: 200;
+  background-color: #FFFFFF;
+}
+
+input, textarea {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: #42C0FB;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #42C0FB;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00BFFF;
+}
+
+.heroContent {
+  margin: 0 auto;
+  text-align: center;
+  width: 900px;
+  max-width: 100%;
+  padding: 125px 0;
+}
+
+.heroContent p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+  max-width: 100%;
+}
+
+.block {
+  margin: 25px auto;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  border: 0;
+}
+
+.block-solid {
+  display: block;
+  background-color: #5e696d;
+  width: 100%;
+  margin: 40px 0 0 0;
+  padding: 80px 0;
+  border: 0;
+  text-align: center;
+}
+
+.block-solid h2 {
+  letter-spacing: 2px;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: 660;
+  font-family: 'Montserrat', sans-serif;
+  color: #FAFAFA;
+  padding: 0;
+}
+
+.block-solid p {
+  font-size: 1.2em;
+  letter-spacing: 1.25px;
+  line-height: 1.8;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 80%;
+  font-weight: 600;
+  width: 600px;
+  text-align: center;
+  color: #FAFAFA;
+}
+
+.buffer {
+  margin: 60px auto 0 auto;
+  padding-bottom: 60px;
+}
+
+.logo {
+  padding: 20px 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 660px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 1.333em;
+  font-weight: 660;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #42C0FB;
+}
+
+.titleBar {
+  vertical-align: middle;
+  text-align: center;
+/*  display: block;*/
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 50px;
+  padding: 0;
+  font-size: 1.333em;
+  font-weight: 660;
+  font-family: 'Montserrat', sans-serif;
+  color: #FAFAFA;
+}
+
+.separatorBar {
+  height: 135px;
+  width: 100%;
+  background-color: #42C0FB;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.long-description {
+  width: 430px;
+  max-width: 80%;
+  padding: 30px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: left;
+  padding-top: 10px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+/*.long-description h3 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+}*/
+
+.short-description {
+  width: 430px;
+  max-width: 80%;
+  padding: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 2;
+}
+
+.short-description ul {
+  list-style: none;
+  padding: 0;
+}
+
+.short-description span {
+  font-size: 1.1em;
+}
+
+.short-description li {
+  vertical-align: top;
+}
+
+.middle {
+  padding: 60px 0;
+}
+
+
+/*.short-description h3 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 3px;
+  display: inline-block;
+}*/
+
+.short-description h4 {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  font-size: 1.15em;
+}
+
+.top-description {
+  margin: 0 auto;
+  width: 920px;
+  max-width: 80%;
+}
+
+.bottom-description {
+  display: inline-block;
+  /*float: right;*/
+  vertical-align: top;
+  text-align: left;
+  width: 690px;
+  max-width: 80%;
+  vertical-align: middle;
+  /*margin: 0 auto;*/
+  padding: 44px 0;
+}
+
+.circular {
+  vertical-align: top;
+  display: inline-block;
+  margin-right:30px;
+  margin-left: 0;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url("../imgs/phil-borel-portrait.jpeg") no-repeat;
+  }
+
+.center-inner {
+  float: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heroContentContainer {
+  float: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #42C0FB;
+}
+
+/*.center-inner img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 30px;
+  border: 0 solid black;
+}*/
+
+.nav-bar {
+  margin: 0 0 40px 0;
+  height: 30px;
+  padding: 15px 0;
+  background: #42C0FB;
+  max-width: 100%;
+  text-align: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li {
+  margin: 30px;
+  padding: 20px 0;
+  display: inline;
+}
+
+.nav-bar a:link {
+  margin: 0;
+  padding: .3em .4em .3em .4em;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  border: 0;
+  font-size: .9em;
+}
+
+.nav-bar a:visited {
+  color: #FFFFFF;
+  font-size: .9em;
+}
+
+.nav-bar a:hover {
+  margin: 0;
+  padding: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #87CEEB;
+  font-size: .9em;
+  background-color: #FFFFFF;
+}
+
+#about {
+  padding: 10px 0 0 0;
+  float: center;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ctaButtonTop {
+  font-weight: 600;
+  color: #42C0FB;
+  background-color: #fff;
+  width: 200px;
+  padding: 10px 30px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  font-size: .9em;
+  font-style: uppercase;
+  text-decoration: none;
+  margin: auto;
+}
+
+.ctaButton {
+  font-weight: 600;
+  color: #FAFAFA !important;;
+  background-color: #42C0FB;
+  width: 200px;
+  padding: 10px 30px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  font-size: .9em;
+  font-style: uppercase;
+  text-decoration: none;
+  margin: auto;
+}
+
+.button1 {
+  font-weight: 600;
+  color: #42C0FB;
+  background-color: #fff;
+  border: 3px solid #42C0FB;
+  width: 125px;
+  padding: 5px 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-style: uppercase;
+  text-decoration: none;
+  display: block;
+  margin: 45px auto;
+}
+
+.skill-icons {
+  width: auto;
+  height: 90px;
+  margin: 10px;
+  padding: 0;
+}
+
+/*.button a:hover {
+  color: #fff;
+  background-color: #42C0FB !important;;
+  width: 100px;
+  padding: 5px 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-style: uppercase;
+  text-decoration: none;
+  display: block;
+}*/
+
+.footer {
+  position: relative;
+  display: block;
+  bottom: 0;
+  top: 100%;
+  max-width: 100%;
+  background-color: #364347;
+  text-align: center;
+  height: 200px;
+}
+
+.footer p {
+  font-size: .8em;
+  font-weight: 300;
+  color: #C0C0C0;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+
+.footer img {
+  width: auto;
+  height: 60px;
+  margin: 55px 10px 5px 10px;
+  padding: 0;
+}
+
+#grey {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+#about p b {
+  font-weight: 700pt;
+}
+
+/*--------------------------Blog--------------------------*/
+.blogPost {
+  text-align: left;
+  margin: 20px auto;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+  min-height: 185px;
+  max-width: 80%;
+  width: 1000px;
+  float: center;
+  position: relative;
+  display: block;
+}
+
+.blogPostList {
+  margin-top: 45px;
+}
+
+.postTitle {
+  text-align: left;
+  margin: 0 10px 10px 10px;
+  padding: 0;
+  color: #87CEEB;
+}
+
+.postTitle a:link {
+  text-decoration: none;
+  color: #42C0FB;
+}
+
+.postTitle a:visited {
+  text-decoration: none;
+  color: #42C0FB;
+}
+
+.postTitle a:hover {
+  text-decoration: none;
+  color: #87CEEB;
+}
+
+.postText {
+  margin: 0 10px;
+}
+
+/* ----------------------Projects -------------- */
+.full-width {
+  max-width: 90%;
+  margin: 30px auto;
+}
+
+/*.browser-example {
+  padding: 0 10px;
+  margin: 10px;
+}*/
+
+.browser {
+  border: .125em solid black;
+  border-radius: 10px 10px 0 0;
+  width: 1000px;
+  max-width: 90%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.browser:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.14),0 5px 3px -2px rgba(0,0,0,.2),0 3px 8px 0 rgba(0,0,0,.12);
+}
+
+.browser-url {
+  display: inline-block;
+  width: 80%;
+  min-height: 15px;
+  border: 2px solid black;
+  margin: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.browser-url a {
+  color: #42C0FB;
+}
+
+.browser .github {
+  /*display: none;*/
+  padding: 10px;
+  /*margin: 30px 0px 0px 15px;*/
+  width: auto;
+  height: 60px;
+  display: inline-block;
+  vertical-align: bottom;
+  /*transition: color .3s;*/
+  /*&:hover {*/
+    /*color: #f1c40f;*/
+  /*}*/
+  /*display: inline-block;*/
+}
+
+.screen img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.project-summary {
+  display: inline-block;
+  border-radius: 2px;
+  /*float: right;*/
+  /*transition: box-shadow .3s ease-in-out;*/
+  background-color: white;
+  margin: 15px 0;
+  margin-left: 40px;
+  max-width: 80%;
+  vertical-align: top;
+  text-align: left;
+  width: 400px;
+  padding: 40px;
+  padding-top: 15px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+.project-summary:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.14),0 5px 3px -2px rgba(0,0,0,.2),0 3px 8px 0 rgba(0,0,0,.12);
+}
+
+.project-title {
+  padding: 15px 0;
+  margin: 0;
+}
+
+.project-title a {
+  color: #42C0FB;
+  font-family: 'Roboto', sans-serif;
+  /*transition: color .3s ease-in-out;*/
+}
+
+.columns {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
