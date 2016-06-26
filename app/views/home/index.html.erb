@@ -1,0 +1,132 @@
+<header className='header'>
+  <div className="heroContentContainer">
+    <div className="heroContent">
+      <h1 className="logo">PHIL BOREL</h1>
+      <p>
+        Hi, I'm Phil - A passionate software engineer, father, and wannabe body-builder.
+      </p>
+      <div className="buffer">
+        <a className="ctaButtonTop" href="http://pborel.github.io/blogindex.html">Check out my blog.</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div className="block">
+    <h2 className="title">ABOUT ME</h2>
+    <div>
+      <div className="top-description">
+        <img className="circular" src="./imgs/phil-borel-portrait.jpeg"></img>
+
+        <p className="bottom-description">
+            I am a Software Developer at Quicken Loans where I build web services in C# .NET, champion design best-practices, perform code reviews, conduct engineering interviews, and do my best to improve myself and my team everyday. I love the satisfaction of engineering simple yet effective solutions to real-world problems; at the end of the day, I capitalize on business opportunities and deliver value to customers through software development. If you'd like to discuss the importance of software craftmanship, <a href="mailto:philborel21@gmail.com">contact me</a>. You can view my <a href="./files/philborelresume.pdf" target="_blank">resume here</a>.
+        </p>
+      </div>
+
+      <div className="short-description">
+          <ul>
+            <li><h4>Languages:</h4> Ruby (Rails, Sinatra), JS (React.js, AJAX, jQuery), C# (Web API, MVC), Java, C, HTML5/CSS3, SQL (PostgreSQL, MSSQLS, SQLite3)</li>
+            <li className="middle"><h4>Concepts:</h4> OOP/D (UML, Design Patterns - SOLID), TDD, CD/I, Software Craftmanship</li>
+            <li><h4>Tools:</h4> Git/Github, TFS, Heroku, Release Manager, Visual Studio, Eclipse, NetBeans, Sublime Text, Xcode</li>
+          </ul>
+      </div>
+
+      <div className='long-description'>
+        <p>
+          <b>I love quality code</b>, simple design, and high-performance systems. I recently graduated from <a href="http://devbootcamp.com/">Dev Bootcamp</a> where I studied software application development and major in Computer Science at Rasmussen College.
+        </p>
+        <br></br>
+
+        <p>
+          <b>I value teamwork</b> and cohesion; programming is NOT a solo activity. That's why I obtained a Certified Associate's in Project Management and attended EQ training.
+        </p>
+        <br></br>
+
+        <p>
+          <b>I am excited about learning all the things.</b> I spend my free time chasing knowledge. My enthusiasm to learn new technologies stems from a thirst for mastery across the skill spectrum.
+        </p>
+        <br></br>
+
+        <p>
+          <b>I am dedicated</b> to building efficient solutions to real-world problems. Check out my projects <a href="#projects">here</a>.
+        </p>
+        <br></br>
+      </div>
+    </div>
+</div>
+
+<div className="separatorBar">
+  <h2 className="titleBar"><a name="projects"></a>PROJECTS</h2>
+</div>
+
+<div className="center-inner projectContainer">
+  <div className='projects full-width'>
+    <h2 className='title'>FINISHED PROJECTS</h2>
+    <div className='projects full-width'>
+      <hr/>
+      <h2 className='title'>CURRENT PROJECTS</h2>
+      <div className='full-width'>
+        <div className='browser'>
+          <div className='browser-url'>
+            <a href="#">URL</a>
+          </div>
+
+          <a href=""><img className="github" src="imgs/githubicon.png" alt="GitHub"/></a>
+
+          <div className='screen'>
+            <a href="#"><img src="#"/></a>
+          </div>
+        </div>
+
+        <div className='project-summary'>
+          <h4 className='project-title'><a href="#">{this.props.data.title}</a></h4>
+          <hr></hr>
+          <p className='project-description'>project description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div className="block">
+  <div className="center-inner">
+    <hr/>
+    <h2 className="title">Skills</h2>
+    <%= image_tag "rails.png" %>
+    <span><%= image_tag "skill-icons/rubyicon.png" %></span>
+    <span><img className="skill-icons" src="./skill-icons/rubyicon.png" alt="Ruby"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/railsicon.png" alt="Ruby on Rails"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/python.png" alt="Python"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/javascripticon.png" alt="JavaScript"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/reacticon.png" alt="React.js"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/htmlicon.png" alt="HTML5"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/cssicon.png" alt="CSS3"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/javaicon.png" alt="Java"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/DotNet.png" alt="DotNet"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/giticon.png" alt="Git"/></span>
+    <span><img className="skill-icons" src="imgs/skill-icons/postgresqlicon.png" alt="PostgreSQL"/></span>
+  </div>
+</div>
+
+<footer>
+  <div className="block-solid">
+    <h2><a className="contact">Want to work with me?</a></h2>
+
+    <div className="center-inner">
+      <p>I'm taking on new projects, contact me if you'd like to work together.</p>
+      <p><a className="ctaButton" href="mailto:philborel21@gmail.com">send me an email</a></p>
+    </div>
+  </div>
+  <div className="footer">
+    <div className="center-inner">
+      <a href="https://www.linkedin.com/in/philborel"><img id="linkedin" src="imgs/linkedinicon.png" alt="LinkedIn"/></a>
+
+      <a href="https://github.com/pborel"><img id="github" src="imgs/githubicon.png" alt="GitHub"/></a>
+
+      <p>
+        &copy; 2016 Phil Borel. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
